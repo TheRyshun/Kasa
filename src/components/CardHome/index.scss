@@ -14,30 +14,28 @@
 
   &__Card {
     position: relative;
-    width: calc(33.33% - 50px);
-    height: 340px;
+    width: calc(33.33% - 30px);
+    height: 360px;
     margin-bottom: 24px;
     border-radius: 10px;
     overflow: hidden;
     background: linear-gradient(#f96161, #7d3030);
+    color: white;
     }
 
   span {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: white;
-    border-radius: 8px;
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    background-color: $Red;
-    opacity: 90%;
+  //  background-color: $Red;
   }
 
   img{
     width: 100%;
-    height: 340px;
+    height: 360px;
   }
 }
 

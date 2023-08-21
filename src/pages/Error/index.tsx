@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
 
-function Error() {
+const Error = () => {
   return (
     <div className="error">
       <p className="code">404</p>

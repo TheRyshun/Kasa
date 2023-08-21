@@ -10,7 +10,7 @@ interface CardProps {
   cover: string;
 }
 
-function Card({ id, title, cover }: CardProps) {
+const Card = ({ id, title, cover }: CardProps) => {
   return (
     <Link to={`/apartment/${id}`} className="HCard__Card"> {/* Use Link to navigate */}
       <span>{title}</span>

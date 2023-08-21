@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import "./index.scss";
 import DropDown from "../../components/Dropdown";
 import data from "../../../data/logements.json"
+import Slideshow from '../../components/Slideshow/Slideshow';
 
 
 const Apartment = () => {
@@ -16,7 +17,7 @@ const Apartment = () => {
 
   const {
     title,
-    cover,
+    pictures,
     description,
     host,
     rating,
@@ -38,10 +39,8 @@ const Apartment = () => {
   return (
     <>
           <div className="Apartment">
-        <img
-          src={cover}
-          alt=""
-        />
+          <Slideshow pictures={pictures} title={title} />
+
 
         <div className="Apartment__container">
           <div className="Apartment__item">
