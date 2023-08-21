@@ -1,46 +1,46 @@
-.carousel-container {
+.slideshow {
     position: relative;
     color: black;
-  }
 
-  .carousel-slide {
-    flex: 0 0 100%;
-    position: relative;
-  }
+    &__slide {
+      flex: 0 0 100%;
+      position: relative;
+    }
 
-  .carousel-navigation {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+    &__navigation {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
 
-  .carousel-counter {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 110px;
-  }
+    &__fleche {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
 
-  .carousel-fleche {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
+    &__arrow {
+      cursor: pointer;
+      font-size: 42px;
+      margin: 0 12px;
+    }
 
-  .carousel-arrow {
-    cursor: pointer;
-    font-size: 42px;
-    margin: 0 12px;
+    &__counter {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 110px;
+    }
+  
   }
-
   @media (max-width: 768px) {
-    .carousel-arrow {
+    .slideshow__arrow {
         font-size: 32px;
     }  
 
-    .carousel-counter {
+    .slideshow__counter {
         margin-top: 120px;
       }
   }
