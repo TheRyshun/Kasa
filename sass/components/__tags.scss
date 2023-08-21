@@ -1,0 +1,18 @@
+.Tags {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__Box {
+    border-radius: 10px;
+    background-color: #ff6060;
+    padding: 10px 10px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+  }
+  &__Name {
+    color: white;
+    font-size: 14px;
+  }
+}

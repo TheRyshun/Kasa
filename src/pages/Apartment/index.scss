@@ -1,0 +1,97 @@
+.Apartment {
+    img {
+      height: 415px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      border-radius: 12px;
+    }
+  
+    .Apartment__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .Apartment__item {
+      text-align: left;
+      color: #FF6060;
+      flex: 1;
+    }
+  
+    &__Box {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-weight: bold;
+    }
+
+    &__BoxR {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      height: 90%;
+      margin-top: 32px;
+    }
+
+    &__Personnal {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__Profil {
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        align-items: center;
+        width: 80%;
+        text-align: right;
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 99px;
+        }
+
+    }
+  
+    &__title {
+      font-size: 36px;
+    }
+  
+    &__localisation {
+      font-size: 18px;
+    }
+
+    .Apartment__Stars-Container {
+      display: flex;
+      height: 30%;
+      align-items: end;
+    }
+  
+
+    .Apartment__Stars {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .Tags-Container {
+        margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .Apartment__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Apartment__BoxR {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }

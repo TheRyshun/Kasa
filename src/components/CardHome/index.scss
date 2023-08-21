@@ -1,0 +1,85 @@
+@import "../../../sass/abstracts/variables";
+
+.HCard {    
+  border-radius: 16px;
+  background-color: $LRed;
+  margin-top: 36px;
+
+  &__Box {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+  &__Card {
+    position: relative;
+    width: calc(33.33% - 50px);
+    height: 340px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(#f96161, #7d3030);
+    }
+
+  span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: $Red;
+    opacity: 90%;
+  }
+
+  img{
+    width: 100%;
+    height: 340px;
+  }
+}
+
+.imgBoxHeaderH {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/img_header.png");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 3.5em;
+    text-align: center;
+    border-radius: 16px;
+  }
+  
+  .mobile-line-break {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-line-break {
+      display: block;
+    }
+    .imgBoxHeaderH {
+      justify-content: flex-start;
+      text-align: start;
+
+      &__title {
+        margin-left: 24px;
+      }
+    }
+    .HCard {
+      background-color: transparent;
+        &__Box {
+          flex-direction: column;
+          align-items: center;
+          gap: 40px;
+          padding: 0;
+        }
+
+        &__Card {
+          width: calc(100%);
+          }
+      
+      }    
+  }
+
