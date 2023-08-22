@@ -72,3 +72,8 @@
     margin-bottom: 32px;
   }
   
+  @media (max-width: 768px) {
+    .drop {
+      margin: 0px 0px;
+    }
+  }

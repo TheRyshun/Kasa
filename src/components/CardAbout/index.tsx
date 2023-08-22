@@ -38,7 +38,7 @@ const ContainA = () => {
 
       <div className="drop">
         {Data.map((item) => (
-          <DropDown key={item.id} content={item.desc} {...item} />
+          <DropDown key={item.id} content={item.desc} title = {item.title} />
         ))}
       </div>
     </>
