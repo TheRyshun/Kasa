@@ -3,7 +3,7 @@ import "./index.scss";
 
 interface DropDownProps {
   title: string;
-  content: string;
+  content: React.ReactNode[];
 }
 
 const DropDown: React.FC<DropDownProps> = (props) => {
@@ -22,13 +22,12 @@ const DropDown: React.FC<DropDownProps> = (props) => {
     >
       <div className="dropdown__Info">
         <span>{props.title}</span>
-
         <span>
           <i className={`arrow ${ParagrapheVisible ? "up" : "down"}`}></i>
         </span>
       </div>
       {ParagrapheVisible && (
-        <p className="dropdown__Para">{props.content}</p>
+        <div className="dropdown__Para">{props.content}</div>
       )}
     </div>
   );

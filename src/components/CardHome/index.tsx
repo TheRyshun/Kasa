@@ -1,8 +1,7 @@
-import React from 'react';
-import './index.scss';
-import apartments from '../../../data/logements.json';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import "./index.scss";
+import apartments from "../../../data/logements.json";
+import { Link } from "react-router-dom";
 
 interface CardProps {
   id: string;
@@ -12,12 +11,12 @@ interface CardProps {
 
 const Card = ({ id, title, cover }: CardProps) => {
   return (
-    <Link to={`/apartment/${id}`} className="HCard__Card"> {/* Use Link to navigate */}
+    <Link to={`/apartment/${id}`} className="HCard__Card">
       <span>{title}</span>
       <img src={cover} alt={title} />
     </Link>
   );
-}
+};
 
 const CarouselHome: React.FC = () => {
   return (
@@ -34,7 +33,9 @@ const CarouselHome: React.FC = () => {
             <Card
               key={apartment.id}
               title={apartment.title}
-              cover={apartment.cover} id={apartment.id}            />
+              cover={apartment.cover}
+              id={apartment.id}
+            />
           ))}
         </div>
       </div>
